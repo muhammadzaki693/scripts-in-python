@@ -1,7 +1,10 @@
+"""
+if you can not run the file then run this
+"""
+import glob
 import os
 
-def run(file,args):
-	os.system(f"python {file} {args}")
+for file in glob.glob("*.py"):
+	os.system("chmod 777 {}".format(file))
 
-if __name__ == "__main__":
-	run("deadfish.py", "run df.txt")
+os.system("python ccalc.py")

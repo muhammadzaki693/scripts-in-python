@@ -22,6 +22,7 @@ def execute_code(code):
 				print(acc,end=" ")
 			else:
 				continue
+		print()
 
 @app.command()
 def run(file: str):
