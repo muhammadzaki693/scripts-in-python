@@ -1,8 +1,2 @@
-.upm/
 replit.nix
 .replit
-venv/*
-__pycache__/*
-.config
-.git
-.breakpoints
