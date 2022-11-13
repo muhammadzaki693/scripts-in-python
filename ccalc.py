@@ -120,7 +120,7 @@ parser = yacc.yacc()
 
 while True:
 	try:
-		s = input("> ")
+		s = input("calculator> ")
 	except:
 		break
 	parser.parse(s)

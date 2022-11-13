@@ -3,7 +3,6 @@ deadfish was created by Jonathan Todd Skinner this language is so easy to make e
 """
 import typer
 
-acc = 0
 app = typer.Typer()
 
 def execute_code(code):
@@ -29,14 +28,14 @@ def run(file: str):
 	"""run a deadfish program"""
 	with open(file, 'r') as f:
 		code = f.read()
-	execute_code(code)
+	deadfish.execute_code(code)
 	
 @app.command()
 def repl():
 	"""run a deadfish REPL"""
 	while True:
 		code = input("deadfish> ")
-		execute_code(code)
+		deadfish.execute_code(code)
 
 if __name__ == '__main__':
 	app()
